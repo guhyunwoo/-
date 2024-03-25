@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
+    <title>Document</title>
 </head>
 <body>
+    <h1>회원가입을 환영합니다.</h1>
     <form>
-        <h1>레드향 주문하기</h1>
         <fieldset>
-            <legend>상품선택</legend>
-            <select>
-                <option>레드향 특</option>
-                <option>레드향 상</option>
-                <option>레드향 중</option>
-                <option>레드향 소</option>
-            </select>
-            <br><br>
-            <input type="checkbox">선물용 3kg <input type="text">개<br><br>
-            <input type="checkbox">선물용 5kg <input type="text">개<br><br>
-            <input type="radio" name="addition">밤
-            <input type="radio" name="addition">감
-            <input type="radio" name="addition">사과
+            <legend>사용자 정보</legend>
+            이름<input type = "text"><br>
+            이메일<input type = "email"><br>
+            나이<input type = "text"><br>
+            방문빈도<input type = "range"><br>
+            생년월일<input type="date"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <input type="radio" name="addition"> 메일 수신
+            <input type="radio" name="addition"> 메일 수신 안함
+        </fieldset>
+        <br>
+        <button type="button">가입하기</button>
+        <button type="button">취소</button>     
+        <button oneclick="window.open('notice.html')">공지열기</button>
+        <br>
+        <fieldset>
+            <legend>파일열기</legend>
+            <input type="file">
         </fieldset>
     </form>
 </body>
